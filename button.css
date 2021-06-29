@@ -1,0 +1,64 @@
+.btn_wrapper {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.cta-btn {
+  display: inline-block;
+  width: 200px;
+  font-size: 0.8rem;
+  padding: 0.9em 0;
+  background-color: #ff9a3d;
+  color: #000;
+  letter-spacing: var(--Letter-spacing);
+  border: 0;
+  border-radius: var(--Btn-radius);
+  box-shadow: var(--Boxshadow);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.cta-btn:hover {
+  background-color: #ff7a00;
+}
+.gdgt-btn {
+  border: 0;
+  cursor: pointer;
+}
+.remove-btn {
+  width: auto; /*make the width of modal(remove item btn) adjust to the available space*/
+  background-color: #ffcd9e;
+  text-transform: lowercase;
+  font-size: 13px !important;
+  padding: 8px !important;
+  box-shadow: none;
+}
+.btns_container button {
+  width: 19ch;
+  min-width: auto;
+}
+.btns_container button:nth-child(1) {
+  background-color: #ffcd9e;
+  color: #000;
+}
+/* shopping cart */
+.cart {
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #ff9a3d;
+  padding: 0.15rem 0.2rem;
+  order: 2;
+  border-radius: var(--Radius);
+  cursor: pointer;
+}
+.cart-icon {
+  width: 30px;
+}
+.cart_no {
+  color: var(--White);
+  font-weight: bold;
+}
+.ok-btn-container {
+  margin-top: 2em;
+}
