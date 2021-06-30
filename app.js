@@ -99,7 +99,6 @@ function handleAddToCart(e) {
 
     // create cart DOM elements
     const cartRow = document.createElement('div');
-    // cartRow.classList.add('cart_row');
     cartRow.className = 'cart_row cart_item_row';
     cartRow.setAttribute('data-amount', '1');
     // item serial no
@@ -355,7 +354,7 @@ function handleLazyload(entries, obs) {
       const img = entry.target;
       img.src = img.dataset.src;
       img.classList.add('loaded');
-      obs.unobserve(img);
+      observer.unobserve(img);
     }
   });
 }
