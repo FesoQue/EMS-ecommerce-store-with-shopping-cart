@@ -166,7 +166,9 @@ const updatePrice = () => {
     let totalAmt = priceVal * itemQty;
     priceTotal += totalAmt;
   }
-  cartTotal.innerText = `₦${priceTotal.toFixed(2)}`;
+  //format number to have comma as a thousand seperator
+  cartTotal.innerText = new Intl.NumberFormat('en-NG', { style: 'currency', currency: 'NGN' }).format(priceTotal).split(".")[0];;
+  //Delete .split(".")[0] if you want two decimal places to appear.
 };
 
 // ********** update shopping cart item count ************
