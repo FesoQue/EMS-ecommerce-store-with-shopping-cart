@@ -105,7 +105,6 @@ function handleAddToCart(e) {
     // item serial no
     const sNo = document.createElement('p');
     sNo.className = 'col-1';
-    sNo.innerText = getSno();
     // cart item name
     const cartPName = document.createElement('p');
     cartPName.className = 'col-2';
@@ -140,14 +139,6 @@ function handleAddToCart(e) {
   updateCartItem();
   resetCartBtn(btn);
 }
-
-// ********** handle item serial num ************
-let serialNo = 0;
-const getSno = () => {
-  serialNo++;
-  return serialNo;
-};
-
 // ********** remove item(s) from cart ************
 const handleRemoveItem = (el) => {
   el.remove();
@@ -167,12 +158,12 @@ const updatePrice = () => {
   let priceTotal = 0;
   for (let i = 0; i < cart_row.length; i++) {
     const element = cart_row[i];
+    element.children[0].innerText = i + 1; //get cart items serial num
     const price = element.querySelector('.col-3').innerText.replace('₦', '');
     let priceVal = parseFloat(price);
     let qtyVal = element.children[3].value;
     let itemQty = parseFloat(qtyVal);
     let totalAmt = priceVal * itemQty;
-    totalAmt.toLocaleString();
     priceTotal += totalAmt;
   }
   cartTotal.innerText = `₦${priceTotal.toFixed(2)}`;
@@ -347,7 +338,7 @@ const resetStatus = () => {
 // ********** lazyload with intersection observer ************
 const options = {
   rootMargin: '0px',
-  threshold: 0.7,
+  threshold: 0.4,
 };
 
 let observer = new IntersectionObserver(handleLazyload, options);
