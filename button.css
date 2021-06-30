@@ -16,6 +16,7 @@
   box-shadow: var(--Boxshadow);
   cursor: pointer;
   transition: 0.3s ease;
+  outline: 0;
 }
 .cta-btn:hover {
   background-color: #ff7a00;
@@ -31,10 +32,12 @@
   font-size: 13px !important;
   padding: 8px !important;
   box-shadow: none;
+  outline: 0;
 }
 .btns_container button {
   width: 19ch;
   min-width: auto;
+  outline: 0;
 }
 .btns_container button:nth-child(1) {
   background-color: #ffcd9e;
