@@ -5,10 +5,10 @@
 }
 .cta-btn {
   display: inline-block;
-  width: 200px;
+  width: 170px;
   font-size: 0.8rem;
   padding: 0.9em 0;
-  background-color: #ff9a3d;
+  background-color: #ff7a00;
   color: #000;
   letter-spacing: var(--Letter-spacing);
   border: 0;
@@ -26,7 +26,7 @@
 }
 .remove-btn {
   width: auto; /*make the width of modal(remove item btn) adjust to the available space*/
-  background-color: #ffcd9e;
+  background-color: #ff9a3d;
   text-transform: lowercase;
   font-size: 13px !important;
   padding: 8px !important;

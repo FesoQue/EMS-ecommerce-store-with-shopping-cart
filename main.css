@@ -292,6 +292,10 @@ input[type='number'] {
 .col-5 {
   grid-column: 10 / 13;
 }
+.qty {
+  outline: 0;
+  border: 1px solid #111;
+}
 /* form */
 .form {
   display: grid;
@@ -337,10 +341,10 @@ input[type='number'] {
 }
 /* js classes */
 .form_control.success input {
-  border: 1.5px solid green;
+  border: 1px solid green;
 }
 .form_control.error input {
-  border: 1.5px solid red;
+  border: 1px solid red;
 }
 .form_control.error small {
   opacity: 1;
@@ -436,7 +440,8 @@ input[type='number'] {
   text-align: center;
 }
 .nl_content p {
-  font-size: 14px;
+    font-size: 14px;
+    color: #444;
 }
 #nl_form {
   width: 100%;
@@ -445,6 +450,9 @@ input[type='number'] {
 #nl_form input {
   width: 60%;
   padding: 8px;
+  border: 0;
+  outline: 0;
+  border: 1px solid #ff9a3d;
 }
 .nl_content button {
   display: inline-block;
@@ -467,7 +475,7 @@ input[type='number'] {
 .values_content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  gap: 2rem;
   text-align: center;
 }
 .value p {
@@ -478,7 +486,7 @@ input[type='number'] {
 .value span {
   display: block;
   font-size: 14px;
-  color: #555;
+  color: #444;
 }
 .values_icon {
   width: 40px;
