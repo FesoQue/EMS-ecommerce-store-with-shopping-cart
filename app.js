@@ -94,7 +94,7 @@ function handleAddToCart(e) {
   const productPrice = el2.children[1].innerText;
 
   if (btn && btn.innerText === 'Add to cart') {
-    btn.innerText = 'Remove from cart';
+    btn.innerText = 'Added to cart';
     btn.style.background = '#ffcd9e';
 
     // create cart DOM elements
